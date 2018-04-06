@@ -72,8 +72,4 @@
         margin:20px;
     }
 
-   
-
-
-
 </style>

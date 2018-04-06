@@ -81,12 +81,16 @@
                 <tr>
                     <td>表格单元格内容</td>
                     <td>表格单元格内容</td>
-                    <td>表格单元格内容</td>
+                    <td>
+                        <a href="#top">操作</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>表格单元格内容</td>
                     <td>表格单元格内容</td>
-                    <td>表格单元格内容</td>
+                    <td>
+                        <a href="#top">操作</a>
+                    </td>
                 </tr>
                 <tr class="countTotal">
                     <td>总计</td>
@@ -195,8 +199,25 @@
         font-size: 15px;
     }
 
-    ul li {
-        list-style: none;
+    p {
+        line-height: 1.5rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+        line-height: 1.5rem;
+    }
+
+    ol,
+    ul {
+        margin-left: 20px;
+        line-height: 1.5rem;
+    }
+
+    ol {
+        list-style-type: decimal;
+
     }
 
     .logoName {
@@ -221,7 +242,7 @@
     header nav {
         float: right;
         margin-right: 30px;
-        line-height:50px;
+        line-height: 50px;
     }
 
     header a {
@@ -298,6 +319,11 @@
     .border-table {
         border-collapse: collapse;
         width: 100%;
+    }
+
+    table {
+        line-height: 1.5rem;
+        text-align: left;
     }
 
     table th {

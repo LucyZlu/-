@@ -14,8 +14,6 @@
             <img src="../images/Penguins.jpg" alt="个人log">
             <img src="../images/Penguins.jpg" alt="个人log">
         </div>
-
-        <div class="clearfix"></div>
     </div>
 </template>
 
@@ -75,8 +73,5 @@
         display:block;
     }
 
-    .clearfix{
-        clear:both;
-    }
 
 </style>
