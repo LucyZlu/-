@@ -33,6 +33,17 @@
             </li>
           </ul>
         </li>
+        <li class='menu'>
+          <a href="#top" id="mission5">任务五</a>
+          <ul class="submenu">
+              <li>
+                <router-link to='/mission5Float'>浮动+BFC</router-link>
+              </li>
+              <li>
+                <router-link to='/mission5Flex'>flex</router-link>
+              </li>
+            </ul>
+        </li>
       </ul>
     </nav>
     <hr>
@@ -48,7 +59,8 @@
   }
 
   nav {
-    margin: 5px 40px;
+    padding:5px 10px;
+    box-sizing:border-box;
     height: 50px;
     width: 100%;
     /*让二级菜单的层叠顺序位于下方显示区的上面*/
@@ -73,6 +85,11 @@
 
   .menu:hover .submenu {
     display: block;
-
+    
   }
+
+  .menu:hover a:first-child{
+    text-decoration: underline;
+  } 
+ 
 </style>

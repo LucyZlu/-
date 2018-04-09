@@ -194,7 +194,6 @@
 <style scoped>
     .container {
         background: lightgray;
-        margin: 0 50px;
         color: black;
         font-size: 15px;
     }
@@ -292,8 +291,8 @@
     }
 
     article img {
-        width: 50%;
-        height: 50%;
+        width: 500px;
+        height: 300px;
     }
 
     figure {
@@ -305,8 +304,8 @@
     }
 
     figure img {
-        width: 90%;
-        height: 80%;
+        width: 80px;
+        height: 80px;
     }
 
     .border-table,
@@ -356,11 +355,10 @@
     .submitLgBtn {
         display: block;
         background: blue;
-        color: deepskyblue;
+        color: white;
         width: 100%;
         height: 40px;
         border-radius: 10px;
-        ;
     }
 
     footer {
