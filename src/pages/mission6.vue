@@ -71,7 +71,7 @@
                 </div>
                 <div class="bottomRight">
                     <div class="computer">
-                        <img src="../images/computer2.png" alt="computer">
+                        <img src="../images/computer2.png" alt="computer" class="computer2">
                         <div class="layer">
                             <img src="../images/layer.png" alt="layer">
                             <div class="layer layerText">
@@ -297,6 +297,11 @@
         position: relative;
     }
 
+    .computer2 {
+        width: 458px;
+        height: 275px;
+    }
+
     .layer {
         position: absolute;
         bottom: 0;
@@ -392,8 +397,6 @@
     .computer1 {
         float: right;
         margin: 10px 0 10px 10px;
-        width: 458px;
-        height: 275px;
     }
 
     .list {
