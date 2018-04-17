@@ -315,35 +315,27 @@
         font: italic 12px "Microsoft YaHei";
         color: #72b16a;
         word-spacing: 140%;
-        line-height: 61px;
-    }
-
-    .layerText span:first-of-type {
-        vertical-align: middle;
     }
 
     .greenBorder {
-        display: inline-block;
+        float: left;
         width: 3px;
         height: 44px;
         background: #72b16a;
-        margin-left: 50px;
-        vertical-align: middle;
-        margin-right: 10px;
-    }
-
-    .baselineText {
-        vertical-align: bottom;
-        margin-bottom: -10px;
+        margin: 8px 10px 0 50px;
     }
 
     .whiteText {
-        display: inline-block;
+        float: left;
         font: 26px "Microsoft YaHei";
         color: #ffffff;
         box-sizing: border-box;
-        vertical-align: middle;
-        margin-right: 5px;
+        margin: 10px 5px 0 0;
+    }
+
+    .baselineText {
+        float: left;
+        margin-top: 28px;
     }
 
     .bottom {
@@ -424,7 +416,7 @@
     }
 
     .list ul li {
-        margin: 18px 0;
+        margin: 19px 0;
     }
 
     .list ul li:last-child {
