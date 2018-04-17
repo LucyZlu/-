@@ -324,12 +324,12 @@
         background: #72b16a;
         margin-left: 50px;
         vertical-align: middle;
-        margin-right:10px;
+        margin-right: 10px;
     }
 
     .baselineText {
         vertical-align: bottom;
-        margin-bottom:-10px;
+        margin-bottom: -10px;
     }
 
     .whiteText {
@@ -338,7 +338,7 @@
         color: #ffffff;
         box-sizing: border-box;
         vertical-align: middle;
-        margin-right:5px;
+        margin-right: 5px;
     }
 
     .bottom {
@@ -392,6 +392,8 @@
     .computer1 {
         float: right;
         margin: 10px 0 10px 10px;
+        width: 458px;
+        height: 275px;
     }
 
     .list {
