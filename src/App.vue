@@ -47,6 +47,9 @@
         <li class='menu'>
           <router-link to='/mission6'>任务六</router-link>
         </li>
+        <li class='menu'>
+          <router-link to='/mission7'>任务七</router-link>
+        </li>
       </ul>
     </nav>
     <hr>
@@ -55,6 +58,7 @@
 </template>
 
 <style scoped>
+ 
   a {
     color: black;
     margin: 10px;
