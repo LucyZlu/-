@@ -53,7 +53,12 @@
                     <select class="selectCountry">
                         <option value="中国">中国</option>
                     </select>
+                    <div class="selectIcon">
+                        <div class="leftArrow"></div>
+                        <div class="rightArrow"></div>
+                    </div>
                     <select class="selectProvince">
+                        <option value="" disabled selected class="selectInfo">省份</option>
                         <option value="北京">北京市</option>
                         <option value="天津">天津市</option>
                         <option value="河北">河北省</option>
@@ -61,11 +66,102 @@
                         <option value="内蒙古自治区">内蒙古自治区</option>
                         <option value="辽宁">辽宁省</option>
                     </select>
+                    <div class="selectIcon">
+                        <div class="leftArrow"></div>
+                        <div class="rightArrow"></div>
+                    </div>
                     <select class="selectCity">
                         <option value="北京">北京</option>
                     </select>
+                    <div class="selectIcon">
+                        <div class="leftArrow"></div>
+                        <div class="rightArrow"></div>
+                    </div>
                     <button class="searchBtn" type="button">搜索</button>
                 </form>
+            </div>
+        </article>
+
+        <article class="imageWall">
+            <figure>
+                <div class="wallPic">
+                    <img src="../images/task7_wall1.png" alt="wall picture">
+                </div>
+
+                <h3>北京活动</h3>
+
+                <p>新社区大联盟</p>
+            </figure>
+            <figure>
+                <h1>上海活动</h1>
+                <p>夜上海新景观探索</p>
+                <div class="wallPic">
+                    <img src="../images/task7_wall2.png" alt="wall picture">
+                </div>
+
+            </figure>
+            <figure>
+                <div class="wallPic">
+                    <img src="../images/task7_wall3.png" alt="wall picture">
+                </div>
+                <p>
+                    <h3>深圳活动</h3>
+                </p>
+                <p>全新海岸线观点站</p>
+            </figure>
+            <figure>
+                <div class="wallPic">
+                    <img src="../images/task7_wall4.png" alt="wall picture">
+                </div>
+                <p>
+                    <h3>香港活动</h3>
+                </p>
+                <p>奢侈消费大派送</p>
+            </figure>
+        </article>
+        <article class="newWorld1">
+            <div class="newWorldText">
+                <h2>
+                    新世界
+                </h2>
+                <h1>TIME</h1>
+                <p>@新世界-北京</p>
+                <p>2016.04.01</p>
+            </div>
+            <img src="../images/task7_newworld.png" alt="newworld">
+            <div class="worldText">
+                <h1>新世界/
+                    <span class="redOne">01</span>
+                </h1>
+                <p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个</p>
+                <button type="button" class="moreBtn">更多详情</button>
+                <ul>
+                    <li>
+                        <button type="button" class="moreSelectBtn"></button>
+                    </li>
+                    <li>
+                        <button type="button" class="moreSelectBtn"></button>
+                    </li>
+                    <li>
+                        <button type="button" class="moreSelectBtn"></button>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="threeBlock">
+            <div class="newRedBlock">
+                <p>新时代</p>
+                <p>关于爱生活的我们</p>
+                <div class="whiteBorder"></div>
+                <button type="button" class="whiteMoreBtn">查看更多</button>
+            </div>
+            <div class="whiteBlock">
+                <p>新时代</p>
+                <p>关于爱生活的我们</p>
+                <div class="grayBorder"></div>
+                <button type="button" class="redMoreBtn">查看更多</button>
+            </div>
+            <div class="person">
             </div>
         </article>
         <footer>
@@ -79,6 +175,13 @@
         background: white;
         overflow-x: scroll;
         overflow-y: scroll;
+    }
+
+    button {
+        cursor: pointer;
+        /*reset user agent stylesheet*/
+        outline: 0;
+        border: none;
     }
 
     header {
@@ -149,7 +252,6 @@
         top: 230px;
     }
 
-
     .newLife {
         font-size: 60px;
         margin: 0 0 30px 0;
@@ -162,9 +264,6 @@
         width: 327px;
         height: 63px;
         margin-top: 70px;
-        cursor: pointer;
-        /*reset user agent stylesheet*/
-        border: none;
     }
 
     .titleText {
@@ -205,7 +304,7 @@
     }
 
     .map {
-        background: url(../images/task7_map.png);
+        background: url(../images/task7_map.png) no-repeat;
         height: 340px;
         width: 100%;
         position: relative;
@@ -221,6 +320,7 @@
         left: 0;
         right: 0;
         bottom: 0;
+        width: 1280px;
         background: rgba(170, 52, 50, .2);
     }
 
@@ -257,5 +357,290 @@
         -moz-appearance: none;
         /*去除Firefox浏览器的默认下拉图片*/
         appearance: none;
+        padding: 0 10px;
+        color: #a8aaaa;
+    }
+
+    .selectIcon {
+        position: relative;
+        left: -28px;
+        top: 15px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+
+    .leftArrow {
+        position: absolute;
+        width: 8px;
+        height: 1px;
+        transform: rotate(45deg);
+        /*兼容性必加*/
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        background: white;
+    }
+
+    .rightArrow {
+        position: absolute;
+        left: 5px;
+        width: 8px;
+        height: 1px;
+        transform: rotate(-45deg);
+        /*兼容性必加*/
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        background: white;
+    }
+
+    .map select option {
+        background: #e4e3e5;
+        color: #787878;
+        padding: 0 30px;
+    }
+
+    .map select:focus option:hover {
+        background: #be4e48;
+        color: white;
+    }
+
+    /*隐藏select的默认提示信息选项*/
+
+    .selectInfo {
+        display: none;
+    }
+
+    .searchBtn {
+        width: 235px;
+        height: 35px;
+        background: #be4e48;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .imageWall {
+        height: 600px;
+        width: 100%;
+        background: #f7f7f7;
+    }
+
+    .imageWall figure {
+        float: left;
+        margin-top: 100px;
+    }
+
+    .wallPic {
+        height: 335px;
+        width: 215px;
+        line-height: 335px;
+        text-align: center;
+        background: white;
+        border: 1px solid #e0e0e0;
+    }
+
+    .wallPic img {
+        width: 200px;
+        height: 310px;
+        vertical-align: middle;
+    }
+
+    .imageWall figure:nth-child(1) {
+        margin-left: 145px;
+    }
+
+    .imageWall figure:nth-child(2),
+    .imageWall figure:nth-child(3),
+    .imageWall figure:nth-child(4) {
+        margin-left: 35px;
+    }
+
+    .imageWall h3 {
+        text-align: center;
+        margin: 0 auto;
+        color: #323333;
+        margin-top: 15px;
+    }
+
+    .imageWall p {
+        text-align: center;
+        margin: 0 auto;
+        color: #898a8a;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .imageWall h1 {
+        text-align: center;
+        font-size: 25px;
+        color: #323233;
+        letter-spacing: 23px;
+    }
+
+    .worldText p {
+        text-align: left;
+    }
+
+    .newWorld1 {
+        position: relative;
+        height: 567px;
+        width: 100%;
+        font: 12px SimSun;
+        color: #aaaaaa;
+        letter-spacing: 0.1em;
+    }
+
+    .newWorld1 h1 {
+        font: bold 21px SimSun;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .moreSelectBtn {
+        background: url(../images/task7_slideCircle.png) no-repeat;
+        width: 11px;
+        height: 12px;
+        border: none;
+
+    }
+
+    .moreSelectBtn:focus {
+        background: url(../images/task7_slideCircle2.png) no-repeat;
+    }
+
+    .redOne {
+        color: #e7504d;
+    }
+
+    .worldText {
+        display: inline-block;
+        vertical-align: top;
+        width: 425px;
+        padding: 165px 70px 0;
+        box-sizing: border-box;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .moreBtn {
+        margin-top: 50px;
+        width: 100px;
+        height: 30px;
+        border: 1px solid #e5666a;
+        background: white;
+        color: #e5666a;
+        font: 12px "Microsoft YaHei";
+        margin-bottom: 20px;
+    }
+
+    .worldText ul li {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .worldText ul li button {
+        cursor: pointer;
+    }
+
+    .newWorldText {
+        position: absolute;
+        color: white;
+        left: 240px;
+        top: 130px;
+        text-align: center;
+    }
+
+    .newWorldText h1,
+    .newWorldText h2 {
+        font-family: "Microsoft YaHei";
+    }
+
+
+    .newWorldText h2 {
+        font-size: 49.47px;
+        margin-bottom: 8px;
+    }
+
+    .newWorldText h1 {
+        font-size: 157.79px;
+        font-weight: normal;
+        margin-top: -50px;
+    }
+
+    .newWorldText p {
+        font-size: 21.91px;
+    }
+
+    .newWorldText p:first-of-type {
+        margin-top: -35px;
+    }
+
+    .newWorldText p:nth-of-type(2) {
+        margin-top: 18px;
+    }
+
+    .threeBlock {
+        width: 100%;
+    }
+
+    .newRedBlock,
+    .person,
+    .whiteBlock {
+        float: left;
+        width: 33%;
+        height: 520px;
+        text-align: center;
+    }
+
+    .newRedBlock {
+        background: #e74f4d;
+        color: #fdf6f6;
+        font: 21px STHeiti;
+    }
+
+    .newRedBlock,
+    .whiteBlock {
+        padding: 175px 127px;
+        box-sizing: border-box;
+    }
+
+    .whiteBorder {
+        margin: 25px auto;
+        height: 2px;
+        width: 30px;
+        background: white;
+    }
+
+    .whiteBlock {
+        font: 21px STHeiti;
+    }
+
+    .grayBorder {
+        margin: 25px auto;
+        height: 2px;
+        width: 30px;
+        background: gray;
+    }
+
+    .whiteMoreBtn,
+    .redMoreBtn {
+        width: 165px;
+        height: 40px;
+        background: transparent;
+        font: 21px STHeiti;
+    }
+
+    .whiteMoreBtn {
+        border: 1px solid white;
+        color: white;
+    }
+
+    .redMoreBtn {
+        border: 1px solid #e74f4d;
+        color: #e74f4d;
+    }
+
+    .person{
+        background:url(../images/task7_person.png) no-repeat;
     }
 </style>
