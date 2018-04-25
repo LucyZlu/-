@@ -58,7 +58,7 @@
 </template>
 
 <style scoped>
- 
+
   a {
     color: black;
     margin: 10px;

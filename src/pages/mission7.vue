@@ -26,14 +26,17 @@
                 <img src="../images/task7_circle.png" alt="task7_circle">
                 <p>打造全新的世界观，让你更爱你的生活</p>
             </div>
+            <div class="fourColumnBorder"></div>
             <div class="four">
                 <img src="../images/task7_flag.png" alt="task7_flag">
                 <p>丰富多彩的公益活动，发挥新世界的主人公意识</p>
             </div>
+            <div class="fourColumnBorder"></div>
             <div class="four">
                 <img src="../images/task7_flower.png" alt="task7_flower">
                 <p>时尚的新理念，超前体验未知的生活</p>
             </div>
+            <div class="fourColumnBorder"></div>
             <div class="four">
                 <img src="../images/task7_grid.png" alt="task7_grid">
                 <p>完善的培养机制，培养你全新的世界观</p>
@@ -164,17 +167,80 @@
             <div class="person">
             </div>
         </article>
+        <div class="clearfix"></div>
+        <article class="volunteer">
+            <div class="volunteerTitle">
+                <h1>成为我们的志愿者</h1>
+                <div class="redBorder"></div>
+                <p>新世界的大家庭需要每一个爱生活的人加入，如果你够年轻，有梦想，有激情</p>
+                <p>那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+            </div>
+            <div class="volunteerInfo1">
+                <h2>
+                    新世界志愿者协议
+                </h2>
+                <p>加入新世界志愿者的人员必须遵守中华人民共和国的相关法律法规，并且本着平等自愿的原则......</p>
+                <button type="button" class="moreInfo">
+                    <img src="../images/task7_select.png" alt="select">more</button>
+                <h2>新世界志愿者权利</h2>
+                <p>新世界志愿者享受新世界内部所有资源的权利，并且享受所在四新世界活动的优先参与资格</p>
+                <button type="button" class="moreInfo">
+                    <img src="../images/task7_select.png" alt="select">more</button>
+                <h2>更多条款</h2>
+                <button type="button" class="moreInfo">
+                    <img src="../images/task7_select.png" alt="select">more</button>
+            </div>
+            <div class="volunteerInfo2">
+                <div>
+                    <div class="personInfo">
+                        <label for="name">姓名：</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="personInfo">
+                        <label for="age">年龄：</label>
+                        <input type="text" name="age">
+                    </div>
+                </div>
+                <div>
+                    <div class="personInfo">
+                        <label for="tele">联系方式：</label>
+                        <input type="text" name="tele">
+                    </div>
+                    <div class="personInfo">
+                        <label for="addr">联系地址：</label>
+                        <input type="text" name="addr">
+                    </div>
+                </div>
+                <div class="dreamlife">
+                    请简单描述您梦想的生活：
+                    <textarea> </textarea>
+                </div>
+                <button type="button" class="submitBtn">提交申请</button>
+            </div>
+        </article>
         <footer>
-
+            <h1>联系我们</h1>
+            <p>为了更好地获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品咨询</p>
+            <p>也可以通过以下任何方式关注我们动态</p>
+            <input type="text" placeholder="someone@email.com"><button type="button" class="submitEmail">提交</button>
+            <div class="bottom"><span>@2016新世界</span><a href="#top">Back to top</a></div>
         </footer>
     </div>
 </template>
 <style scoped>
     .container {
-        min-width: 1278px;
+       width: 1275px;
         background: white;
+        margin: 0 auto;
         overflow-x: scroll;
-        overflow-y: scroll;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
+    * {
+        box-sizing: border-box;
     }
 
     button {
@@ -206,7 +272,6 @@
         display: inline-block;
         height: 50px;
         width: 60px;
-        box-sizing: border-box;
         text-align: center;
         padding-top: 10px;
         margin: 0 10px;
@@ -237,13 +302,14 @@
     }
 
     .train {
-        width: 100%;
+        width: 1280px;
     }
 
     .top {
         position: relative;
         font: 21px "Microsoft YaHei";
         color: white;
+        margin:0 auto;
     }
 
     .imageText {
@@ -254,7 +320,7 @@
 
     .newLife {
         font-size: 60px;
-        margin: 0 0 30px 0;
+        margin-bottom: 30px;
     }
 
     .startBtn {
@@ -276,18 +342,28 @@
     }
 
     .four {
-        width: 25%;
+        width: 24%;
         height: 185px;
         display: inline-block;
-        box-sizing: border-box;
         text-align: center;
         padding: 42px 80px;
         font: 14px STHeiti;
         color: #767777;
+        margin-bottom:60px;
+        vertical-align:top;
     }
 
     .four img {
         margin-bottom: 45px;
+    }
+
+    .fourColumnBorder{
+        display:inline-block;
+        height:50px;
+        width:2px;
+        background:#bbbbbb;
+        position:relative;
+        top:130px;
     }
 
     .bookCenter {
@@ -515,9 +591,9 @@
     .worldText {
         display: inline-block;
         vertical-align: top;
-        width: 425px;
+        width: 400px;
         padding: 165px 70px 0;
-        box-sizing: border-box;
+        ;
         line-height: 30px;
         text-align: center;
     }
@@ -587,7 +663,7 @@
     .person,
     .whiteBlock {
         float: left;
-        width: 33%;
+        width: 425px;
         height: 520px;
         text-align: center;
     }
@@ -601,7 +677,7 @@
     .newRedBlock,
     .whiteBlock {
         padding: 175px 127px;
-        box-sizing: border-box;
+        ;
     }
 
     .whiteBorder {
@@ -640,7 +716,178 @@
         color: #e74f4d;
     }
 
-    .person{
-        background:url(../images/task7_person.png) no-repeat;
+    .person {
+        background: url(../images/task7_person.png) no-repeat;
+    }
+
+    .volunteerTitle {
+        height: 300px;
+        text-align: center;
+        padding-top: 100px;
+        ;
+    }
+
+    .volunteerTitle h1 {
+        font: 21px STHeiti;
+    }
+
+    .volunteerTitle p {
+        color: #aaaaaa;
+        line-height: 20px;
+    }
+
+    .redBorder {
+        width: 30px;
+        height: 3px;
+        background: #ea6663;
+        margin: 10px auto;
+    }
+
+    .volunteerInfo1 {
+        width: 500px;
+    }
+
+    .volunteerInfo2{
+        vertical-align: top;
+    }
+
+    .volunteerInfo1,.volunteerInfo2 {
+        display: inline-block;
+        height: 280px;
+        padding-left: 100px;
+        font: 12px SimSun;
+        color: #a5a3a2;
+    }
+
+    .volunteerInfo1 h2 {
+        font: 15px STHeiti;
+        color: #231815;
+        margin-bottom: 20px;
+        clear: right;
+    }
+
+    .volunteerInfo1 p {
+        line-height: 20px;
+    }
+
+    .volunteer{
+        margin-bottom:170px;
+    }
+
+    .moreInfo {
+        float: right;
+        margin-bottom: 18px;
+        background: transparent;
+        font: 12px SimSun;
+        color: #a5a3a2;
+    }
+
+    .personInfo {
+        display: inline-block;
+        height: 35px;
+        width: 305px;
+        background: #edecee;
+        margin-bottom: 15px;
+        margin-right: 17px;
+        padding-left: 15px;
+        line-height: 35px;
+    }
+
+    .personInfo label,
+    .personInfo input {
+        vertical-align: middle;
+        color: #787474;
+    }
+
+    .personInfo input {
+        background: transparent;
+        border: none;
+        width: 80%;
+        height: 80%;
+    }
+
+    .dreamlife {
+        height: 120px;
+        width: 635px;
+        background: #edecee;
+        padding: 15px;
+        color:#787474;
+    }
+
+    .dreamlife textarea {
+        display: block;
+        width: 600px;
+        height: 80px;
+        background:transparent;
+        border:none;
+    }
+
+    .submitBtn{
+        width:635px;
+        height:40px;
+        margin-top:12px;
+        background:#ededee;
+        color:black;
+        font-weight: bold;
+    }
+
+    footer{
+        height:400px;
+        background:#32353e;
+        color:#cacbcc;
+        font:21px STHeiti;
+        text-align:center;
+        padding-top:90px;
+        position:relative;
+    }
+
+    footer h1{
+        color:white;
+        margin-bottom:12px;
+    }
+
+    footer p{
+        font:12px SimSun;
+        letter-spacing: 0.1em;
+        line-height:20px;
+    }
+
+    footer p:last-of-type{
+        margin-bottom:30px;
+    }
+
+    footer input{
+        width:428px;
+        height:40px;
+        vertical-align:middle;
+    }
+
+    .submitEmail{
+        width:80px;
+        height:40px;
+        vertical-align:middle;
+    }
+
+    .bottom{
+        height:56px;
+        position:absolute;
+        left:0;
+        bottom:0;
+        right:0;
+        background:#2f3038;
+        font:12px SimSun;
+        padding-top:25px;
+        text-align:left;
+    }
+
+    .bottom span{
+        margin-left:100px;
+    }
+
+    .bottom a{
+        float:right;
+        margin-right:40px;
+        color:white;
+        text-decoration: none;
     }
 </style>
